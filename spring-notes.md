@@ -28,3 +28,21 @@ com
               +- CustomerRepository.Java (__Learn More__ links data model with db)
     
 ```
+## Using JDBC with Spring (For MySql on local device or across LAN)
+In the application.properties file ({$CONTAINING_DIR}project/src/main/resources),
+the following lines to be added (*This works for localhost*)
+```
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://${MYSQLHOST:${host}:3306/${database_name}
+spring.datasource.username=${user}
+spring.datasource.password=${password}
+```
+- [ ] Figure out how to omit passwords from version control
+## Miscellaneous Notes
+### Changing Dependencies in Maven
+To add dependencies in Maven project using intellij IDEA...
+1. Open pom.xml
+2. alt+insert or right click -> generate
+3. dependency
+4. search for dependency
+5. rebuild project
