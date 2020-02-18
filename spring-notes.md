@@ -28,6 +28,22 @@ com
               +- CustomerRepository.Java (__Learn More__ links data model with db)
     
 ```
+## FreeMarker Template Engine
+* <# import "/spring.ftl" as spring /> to bring in the spring ftl macros
+      * This brings in the spring macros to use with the template engine freemarker
+* __Note:__ The default file extension that ViewResolver looks for .ftlh NOT .ftl files
+
+Spring Macro | ftlh
+--- | ---
+message | <@spring.message code/>
+messageText | <@spring.messageText />
+url | <@spring.url relativeUrl />
+formInput | <@spring.formInput path, attributes, fieldType/>
+formHiddenInput | <@spring.formHiddenInput path, attributes />
+formPasswordInput | <@spring.formPasswordInput path, attributes />
+formTextArea | <@spring.formTextArea path, attributes />
+
+
 ## Using JDBC with Spring (For MySql on local device or across LAN)
 In the application.properties file ({$CONTAINING_DIR}project/src/main/resources),
 the following lines to be added (*This works for localhost*)
