@@ -42,6 +42,12 @@ formInput | <@spring.formInput path, attributes, fieldType/>
 formHiddenInput | <@spring.formHiddenInput path, attributes />
 formPasswordInput | <@spring.formPasswordInput path, attributes />
 formTextArea | <@spring.formTextArea path, attributes />
+formSingleSelect | <@spring.formSingleSelect path, options, attributes />
+formMultiSelect | <@spring.formMultiSelect path, options, attributes />
+formRadioButtons | <@spring.formRadioButton path, options, separator, attributes />
+formCheckBoxes | <@spring.formCheckboxes path, options, separator, attributes/>
+showErrors | <@spring.showErrors separator, classOrStyle/>
+
 
 
 ## Using JDBC with Spring (For MySql on local device or across LAN)
